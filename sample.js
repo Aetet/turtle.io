@@ -11,13 +11,19 @@ config = {
 				authRealm : "Private",
 				authList  : ["admin:admin"]
 			}
+		},
+		kerberos : {
+			test3 : {
+				kdc: "localhost"
+			}
 		}
 	},
 	default : "test",
 	root    : "./sites",
 	vhosts  : {
 		"test"  : "test",
-		"test2" : "test2"
+		"test2" : "test2",
+		"test3" : "test"
 	}
 }
 
