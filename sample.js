@@ -14,7 +14,8 @@ config = {
 		},
 		kerberos : {
 			test3 : {
-				kdc: "localhost"
+				kdc   : "localhost",
+				realm : "Private"
 			}
 		}
 	},

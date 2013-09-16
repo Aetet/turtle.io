@@ -27,24 +27,29 @@ TurtleIO.prototype.auth = function ( req, res, host, next ) {
 	// Kerberos
 	// @todo in progress - don't use in production!
 	else if ( this.config.auth.kerberos && this.config.auth.kerberos[host] ) {
-		kerberos = new Kerberos();
+		if ( !req.headers["www-authenticate"] ) {
+			this.respond( req, res, this.messages.NO_CONTENT, this.codes.UNAUTHORIZED, {"WWW-Authenticate": "Negotiate, Basic realm=\"" + this.config.auth.kerberos[host].realm + "\""} );
+		}
+		else {
+			kerberos = new Kerberos();
 
-		kerberos.authGSSClientInit( this.config.auth.kerberos[host].kdc, Kerberos.GSS_C_MUTUAL_FLAG, function ( e, context ) {
-			if ( e || !context.response ) {
-				self.error( req, res, self.codes.SERVER_ERROR );
-			}
-			else {
-				kerberos.authGSSClientStep( context, function ( e, result ) {
-					if ( e ) {
-						self.error( req, res, self.codes.SERVER_ERROR );
-					}
-					else {
-						console.log( result );
-						next();
-					}
-				} );
-			}
-		} );
+			kerberos.authGSSClientInit( this.config.auth.kerberos[host].kdc, Kerberos.GSS_C_MUTUAL_FLAG, function ( e, context ) {
+				if ( e || !context.response ) {
+					self.error( req, res, self.codes.SERVER_ERROR );
+				}
+				else {
+					kerberos.authGSSClientStep( context, function ( e, result ) {
+						if ( e ) {
+							self.error( req, res, self.codes.SERVER_ERROR );
+						}
+						else {
+							console.log( result );
+							next();
+						}
+					} );
+				}
+			} );
+		}
 	}
 
 	return this;
