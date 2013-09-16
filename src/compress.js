@@ -5,8 +5,8 @@
  * @param  {Object}  body Response body
  * @param  {Object}  type gzip (gz) or deflate (df)
  * @param  {String}  etag Etag
- * @param  {Object}  req  HTTP(S) request Object
- * @param  {Object}  res  HTTP(S) response Object
+ * @param  {Object}  req  Request Object
+ * @param  {Object}  res  Response Object
  * @return {Objet}        TurtleIO instance
  */
 TurtleIO.prototype.compress = function ( body, type, etag, req, res ) {

@@ -2,8 +2,8 @@
  * Error handler for requests
  *
  * @method error
- * @param  {Object} req HTTP(S) request Object
- * @param  {Object} res HTTP(S) response Object
+ * @param  {Object} req Request Object
+ * @param  {Object} res Response Object
  * @return {Object}     TurtleIO instance
  */
 TurtleIO.prototype.error = function ( req, res ) {

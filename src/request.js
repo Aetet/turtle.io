@@ -3,8 +3,8 @@
  *
  * @method request
  * @public
- * @param  {Object} req  HTTP(S) request Object
- * @param  {Object} res  HTTP(S) response Object
+ * @param  {Object} req  Request Object
+ * @param  {Object} res  Response Object
  * @param  {String} host [Optional] Virtual host
  * @return {Object}      TurtleIO instance
  */

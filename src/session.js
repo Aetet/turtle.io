@@ -20,15 +20,14 @@ Session.prototype.constructor = Session;
  *
  * @class sessions
  * @type {Object}
- * @todo too slow!
  */
 TurtleIO.prototype.session = {
 	/**
 	 * Creates a session
 	 *
 	 * @method create
-	 * @param  {Object} req HTTP(S) request Object
-	 * @param  {Object} res HTTP(S) response Object
+	 * @param  {Object} req Request Object
+	 * @param  {Object} res Response Object
 	 * @return {Object}     Session instance
 	 */
 	create : function ( req, res ) {
@@ -53,8 +52,8 @@ TurtleIO.prototype.session = {
 	 * Destroys a session
 	 *
 	 * @method destroy
-	 * @param  {Object} req HTTP(S) request Object
-	 * @param  {Object} res HTTP(S) response Object
+	 * @param  {Object} req Request Object
+	 * @param  {Object} res Response Object
 	 * @return {Object}     TurtleIO instance
 	 */
 	destroy : function ( req, res ) {
@@ -78,8 +77,8 @@ TurtleIO.prototype.session = {
 	 * Gets a session
 	 *
 	 * @method get
-	 * @param  {Object} req HTTP(S) request Object
-	 * @param  {Object} res HTTP(S) response Object
+	 * @param  {Object} req Request Object
+	 * @param  {Object} res Response Object
 	 * @return {Mixed}      Session or undefined
 	 */
 	get : function ( req, res ) {
@@ -110,8 +109,8 @@ TurtleIO.prototype.session = {
 	 * Saves a session
 	 *
 	 * @method save
-	 * @param  {Object} req HTTP(S) request Object
-	 * @param  {Object} res HTTP(S) response Object
+	 * @param  {Object} req Request Object
+	 * @param  {Object} res Response Object
 	 * @return {Object}     TurtleIO instance
 	 */
 	save : function ( req, res ) {

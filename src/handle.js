@@ -2,8 +2,8 @@
  * Handles the request
  *
  * @method handle
- * @param  {Object}  req   HTTP(S) request Object
- * @param  {Object}  res   HTTP(S) response Object
+ * @param  {Object}  req   Request Object
+ * @param  {Object}  res   Response Object
  * @param  {String}  path  File path
  * @param  {String}  url   Requested URL
  * @param  {Boolean} dir   `true` is `path` is a directory

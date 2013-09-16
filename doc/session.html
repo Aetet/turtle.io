@@ -13,17 +13,15 @@
   <span class="k">this</span><span class="p">.</span><span class="nx">_timestamp</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span></div></div></div><div class="segment"><div class="comments "><div class="wrapper"><p>Setting constructor loop</p></div></div><div class="code"><div class="wrapper"><span class="nx">Session</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">constructor</span> <span class="o">=</span> <span class="nx">Session</span><span class="p">;</span></div></div></div><div class="segment"><div class="comments doc-section"><div class="wrapper"><p><span class='doc-section-header'> </span></p>
 
-<p>Sessions</p>
-
-<p>TODO: too slow!</p></div></div><div class="code"><div class="wrapper"><span class="nx">TurtleIO</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">session</span> <span class="o">=</span> <span class="p">{</span></div></div></div><div class="segment"><div class="comments doc-section"><div class="wrapper"><p><span class='doc-section-header'>Method create</span></p>
+<p>Sessions</p></div></div><div class="code"><div class="wrapper"><span class="nx">TurtleIO</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">session</span> <span class="o">=</span> <span class="p">{</span></div></div></div><div class="segment"><div class="comments doc-section"><div class="wrapper"><p><span class='doc-section-header'>Method create</span></p>
 
 <p>Creates a session</p>
 
 <p>Parameters:</p>
 
 <ul>
-<li><p><strong>req must be an Object.</strong><br/>(HTTP(S) request Object)</p></li>
-<li><p><strong>res must be an Object.</strong><br/>(HTTP(S) response Object)</p></li>
+<li><p><strong>req must be an Object.</strong><br/>(Request Object)</p></li>
+<li><p><strong>res must be an Object.</strong><br/>(Response Object)</p></li>
 </ul>
 
 <p><strong>Returns an Object</strong><br/>(Session instance)</p></div></div><div class="code"><div class="wrapper">  <span class="nx">create</span> <span class="o">:</span> <span class="kd">function</span> <span class="p">(</span> <span class="nx">req</span><span class="p">,</span> <span class="nx">res</span> <span class="p">)</span> <span class="p">{</span>
@@ -49,8 +47,8 @@
 <p>Parameters:</p>
 
 <ul>
-<li><p><strong>req must be an Object.</strong><br/>(HTTP(S) request Object)</p></li>
-<li><p><strong>res must be an Object.</strong><br/>(HTTP(S) response Object)</p></li>
+<li><p><strong>req must be an Object.</strong><br/>(Request Object)</p></li>
+<li><p><strong>res must be an Object.</strong><br/>(Response Object)</p></li>
 </ul>
 
 <p><strong>Returns an Object</strong><br/>(TurtleIO instance)</p></div></div><div class="code"><div class="wrapper">  <span class="nx">destroy</span> <span class="o">:</span> <span class="kd">function</span> <span class="p">(</span> <span class="nx">req</span><span class="p">,</span> <span class="nx">res</span> <span class="p">)</span> <span class="p">{</span>
@@ -75,8 +73,8 @@
 <p>Parameters:</p>
 
 <ul>
-<li><p><strong>req must be an Object.</strong><br/>(HTTP(S) request Object)</p></li>
-<li><p><strong>res must be an Object.</strong><br/>(HTTP(S) response Object)</p></li>
+<li><p><strong>req must be an Object.</strong><br/>(Request Object)</p></li>
+<li><p><strong>res must be an Object.</strong><br/>(Response Object)</p></li>
 </ul>
 
 <p><strong>Returns a Mixed</strong><br/>(Session or undefined)</p></div></div><div class="code"><div class="wrapper">  <span class="nx">get</span> <span class="o">:</span> <span class="kd">function</span> <span class="p">(</span> <span class="nx">req</span><span class="p">,</span> <span class="nx">res</span> <span class="p">)</span> <span class="p">{</span>
@@ -108,8 +106,8 @@
 <p>Parameters:</p>
 
 <ul>
-<li><p><strong>req must be an Object.</strong><br/>(HTTP(S) request Object)</p></li>
-<li><p><strong>res must be an Object.</strong><br/>(HTTP(S) response Object)</p></li>
+<li><p><strong>req must be an Object.</strong><br/>(Request Object)</p></li>
+<li><p><strong>res must be an Object.</strong><br/>(Response Object)</p></li>
 </ul>
 
 <p><strong>Returns an Object</strong><br/>(TurtleIO instance)</p></div></div><div class="code"><div class="wrapper">  <span class="nx">save</span> <span class="o">:</span> <span class="kd">function</span> <span class="p">(</span> <span class="nx">req</span><span class="p">,</span> <span class="nx">res</span> <span class="p">)</span> <span class="p">{</span>

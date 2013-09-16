@@ -2,8 +2,8 @@
  * Preparing log message
  *
  * @method prep
- * @param  {Object} req HTTP(S) request Object
- * @param  {Object} res HTTP(S) response Object
+ * @param  {Object} req Request Object
+ * @param  {Object} res Response Object
  * @return {String}     Log message
  */
 TurtleIO.prototype.prep = function ( req, res ) {

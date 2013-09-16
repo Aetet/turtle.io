@@ -21,8 +21,8 @@ TurtleIO.prototype.proxy = function ( origin, route, host, stream ) {
 	 * @private
 	 * @param  {Mixed}  arg   Proxy response
 	 * @param  {Object} xhr   XmlHttpRequest
-	 * @param  {Object} req   HTTP(S) request Object
-	 * @param  {Object} res   HTTP(S) response Object
+	 * @param  {Object} req   Request Object
+	 * @param  {Object} res   Response Object
 	 * @return {Undefined}    undefined
 	 */
 	handle = function ( arg, xhr, req, res ) {
@@ -141,8 +141,8 @@ TurtleIO.prototype.proxy = function ( origin, route, host, stream ) {
 	 *
 	 * @method wrapper
 	 * @private
-	 * @param  {Object} req   HTTP(S) request Object
-	 * @param  {Object} res   HTTP(S) response Object
+	 * @param  {Object} req   Request Object
+	 * @param  {Object} res   Response Object
 	 * @return {Undefined}    undefined
 	 */
 	wrapper = function ( req, res ) {

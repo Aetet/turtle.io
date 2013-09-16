@@ -8,12 +8,12 @@ TurtleIO.prototype.cookie = {
 	 * Expires a cookie if it exists
 	 *
 	 * @method expire
-	 * @param  {Object}  res    HTTP(S) response Object
+	 * @param  {Object}  res    Response Object
 	 * @param  {String}  name   Name of the cookie to expire
 	 * @param  {String}  domain [Optional] Domain to set the cookie for
 	 * @param  {Boolean} secure [Optional] Make the cookie only accessible via SSL
 	 * @param  {String}  path   [Optional] Path the cookie is for
-	 * @return {String}        Name of the expired cookie
+	 * @return {String}         Name of the expired cookie
 	 */
 	expire : function ( res, name, domain, secure, path ) {
 		return $.cookie.expire( name, domain, secure, path, res );
@@ -23,7 +23,7 @@ TurtleIO.prototype.cookie = {
 	 * Gets a cookie from the request headers
 	 *
 	 * @method get
-	 * @param  {Object} req  HTTP(S) request Object
+	 * @param  {Object} req  Request Object
 	 * @param  {String} name Name of the cookie to get
 	 * @return {Mixed}       Cookie or undefined
 	 */
@@ -35,7 +35,7 @@ TurtleIO.prototype.cookie = {
 	 * Gets a list cookies from the request headers
 	 *
 	 * @method list
-	 * @param  {Object} req  HTTP(S) request Object
+	 * @param  {Object} req  Request Object
 	 * @param  {String} name Cookie name
 	 * @return {Object}      Collection of cookies
 	 */
@@ -47,7 +47,7 @@ TurtleIO.prototype.cookie = {
 	 * Sets a cookie in the response headers
 	 *
 	 * @method set
-	 * @param  {Object}  res    HTTP(S) response Object
+	 * @param  {Object}  res    Response Object
 	 * @param  {String}  name   Name of the cookie to create
 	 * @param  {String}  value  Value to set
 	 * @param  {String}  offset A positive or negative integer followed by "d", "h", "m" or "s"

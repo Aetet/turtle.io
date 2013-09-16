@@ -6,9 +6,11 @@ var TurtleIO = require("./lib/turtle.io"),
 
 config = {
 	auth : {
-		test2 : {
-			authRealm : "Private",
-			authList  : ["admin:admin"]
+		basic : {
+			test2 : {
+				authRealm : "Private",
+				authList  : ["admin:admin"]
+			}
 		}
 	},
 	default : "test",

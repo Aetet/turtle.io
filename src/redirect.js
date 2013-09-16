@@ -7,7 +7,6 @@
  * @param  {String}  host      [Optional] Hostname this route is for (default is all)
  * @param  {Boolean} permanent [Optional] `true` will indicate the redirection is permanent
  * @return {Object}            instance
- * @todo Make it faster!
  */
 TurtleIO.prototype.redirect = function ( route, url, host, permanent ) {
 	var self    = this,
