@@ -33,6 +33,7 @@
     "moment": "~2.1.0",
     "http-auth" : "~1.2.7",
     "node-syslog" : "~1.1.7",
+    "kerberos" : "~0.0.3",
     "toobusy" : "~0.2.3"
   },
   "devDependencies": {
